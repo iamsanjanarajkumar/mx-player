@@ -18,7 +18,7 @@ function Hero(){
                     <i class="bi bi-star-half text-warning"></i>
                     </div>
                 </div>
-                <div className="d-flex flex-wrap gap-3 mt-4">
+                <div className="d-flex align-items-center flex-wrap gap-3 mt-4">
                     <button className="btn-main hero-btn"><i class="bi bi-play-fill"></i> Play</button>
                     <button className="btn-main-light hero-btn ">More Info</button>
                     <div className="play-icon">
