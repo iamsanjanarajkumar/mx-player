@@ -1,0 +1,61 @@
+.hero{
+    min-height:100vh;
+    background:linear-gradient(45deg,#000,#00000062), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBHrQObNMndF9E8LmDyZXfwuZ9rtwmYowOSdgDbOTcwwQvSo-H4MWazA-S&s=10)no-repeat center;
+    background-size: cover;
+
+}
+.hero-text{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.play-icon{
+    min-width:80px;
+    min-height: 80px;
+    background-color: white;
+    border-radius: 100px;
+    color: black;
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 2.1rem;
+    z-index: 3;
+}
+.play-icon::before{
+   content:"";
+   position:absolute;
+   width:100%;
+   height: 100%;
+   border-radius:100px;
+   background-color:#fff;
+   left:0;
+   top:0;
+   z-index:-2;
+   animation:anim 1s linear infinite alternate;
+}
+.play-icon::after{
+    content:"";
+    position:absolute;
+    width:100%;
+    height: 100%;
+    border-radius:100px;
+    background-color:#fff;
+    left:0;
+    top:0;
+    z-index:-3;
+    animation:anim 1.2s linear infinite alternate;
+    animation-delay: 0.5s;
+ }
+
+@keyframes anim{
+    0%{
+        transform:scale(0.8);
+        opacity: 0.7
+    }
+    100%{
+        transform: scale(1.4);
+        opacity:0.2
+    }
+}
