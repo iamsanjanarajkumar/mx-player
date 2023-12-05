@@ -1,0 +1,27 @@
+header{
+    border-bottom: 1px solid white;
+    position: sticky;
+    top: 0;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+}
+.mx-dropdown{
+ color: white;
+}
+.nav-link{
+    color:white !important;
+}
+.nav-link:hover{
+    color: rgb(72,72,239) !important;
+}
+.dropdown-items{
+    background-color: rgba(28,27,27,0.694) !important;
+    color: white !important;
+    backdrop-filter: blur(20px);
+}
+.dropdown-items:hover{
+    background-color: rgba(33,33,33,0.424)!important;
+
+}
